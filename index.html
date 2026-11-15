@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual da Democracia Hackeado | Pré-Lançamento Oficial</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#07090e',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                            neon: '#22c55e',
+                            blue: '#38bdf8',
+                            darkgreen: '#052e16'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glow-green {
+            box-shadow: 0 0 25px rgba(34, 197, 94, 0.25);
+        }
+        .glow-blue {
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+        }
+        .matrix-bg {
+            background-image: radial-gradient(rgba(34, 197, 94, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-slate-100 font-sans antialiased matrix-bg selection:bg-cyber-neon selection:text-black">
+
+    <!-- Navbar / Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-cyber-neon/10 border border-cyber-neon flex items-center justify-center text-cyber-neon font-mono font-bold text-lg glow-green">
+                    &lt;/&gt;
+                </div>
+                <span class="font-bold text-lg sm:text-xl tracking-tight text-white">
+                    DEMOCRACIA <span class="text-cyber-neon">HACKEADA</span>
+                </span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#tese" class="hover:text-cyber-neon transition">A Tese</a>
+                <span class="text-cyber-border">•</span>
+                <a href="#conceitos" class="hover:text-cyber-neon transition">Conceitos</a>
+                <span class="text-cyber-border">•</span>
+                <a href="#autor" class="hover:text-cyber-neon transition">O Autor</a>
+                <span class="text-cyber-border">•</span>
+                <a href="#pre-lancamento" class="hover:text-cyber-neon transition">Pré-Lançamento</a>
+            </nav>
+            <div>
+                <a href="#cadastro" class="bg-cyber-neon text-cyber-darkgreen font-bold px-5 py-2.5 rounded-lg text-sm transition transform hover:scale-105 shadow-lg shadow-cyber-neon/20 flex items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Agendar Vaga
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cyber-neon/5 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyber-neon/10 border border-cyber-neon/30 text-cyber-neon text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyber-neon animate-pulse"></span>
+                        Pré-Lançamento Exclusivo • 20/11/2026
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        O sistema foi reescrito e <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-neon to-cyber-blue">você não percebeu.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        A nossa Constituição não foi derrubada por um golpe violento; ela foi infectada. O autoritarismo moderno atua como um <strong>vírus residente</strong>, explorando brechas lógicas e instalando privilégios de <code class="text-cyber-neon font-mono bg-cyber-card px-1.5 py-0.5 rounded border border-cyber-border">root user</code> sob o manto da legalidade.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#cadastro" class="w-full sm:w-auto bg-cyber-neon hover:bg-emerald-400 text-cyber-darkgreen font-bold text-center px-8 py-4 rounded-xl transition duration-200 shadow-lg shadow-cyber-neon/25 flex items-center justify-center gap-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Garantir Pré-Lançamento
+                        </a>
+                        <a href="#tese" class="w-full sm:w-auto bg-cyber-card hover:bg-cyber-border text-slate-200 font-medium text-center px-6 py-4 rounded-xl border border-cyber-border transition duration-200 flex items-center justify-center gap-2 text-base">
+                            Explorar o Código <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                    </div>
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-mono">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyber-neon"></i> Livro Impresso + E-book</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyber-neon"></i> Envio Prioritário</div>
+                    </div>
+                </div>
+
+                <!-- Book Mockup / Visual Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyber-neon to-cyber-blue opacity-30 blur-xl"></div>
+                        <div class="relative bg-cyber-card border border-cyber-border rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between border-b border-cyber-border pb-4">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-cyber-neon/80"></div>
+                                </div>
+                                <span class="font-mono text-xs text-slate-400">v2.026.11</span>
+                            </div>
+                            <div class="space-y-3 text-left">
+                                <span class="text-xs font-mono uppercase tracking-widest text-cyber-blue font-bold">Manual Definitivo</span>
+                                <h3 class="text-2xl sm:text-3xl font-black text-white leading-tight">MANUAL DA DEMOCRACIA HACKEADO</h3>
+                                <p class="text-sm text-slate-300 font-mono">O Constitucionalismo Abusivo e a Engenharia do Poder Moderno</p>
+                            </div>
+                            <div class="bg-cyber-bg/80 border border-cyber-border rounded-xl p-4 font-mono text-xs text-slate-400 space-y-2">
+                                <div class="text-cyber-neon">&gt; init_audit_system()</div>
+                                <div class="text-slate-300">&gt; Analisando brechas na Constituição...</div>
+                                <div class="text-amber-400">&gt; ALERTA: Root privileges detectados.</div>
+                                <div class="text-cyber-blue">&gt; Autor: Thiago Monteiro Pinto</div>
+                            </div>
+                            <div class="pt-2 flex items-center justify-between text-xs text-slate-400 border-t border-cyber-border">
+                                <span>Status: Pré-venda</span>
+                                <span class="text-cyber-neon font-bold">Data: 20/11/2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Date Section -->
+    <section id="pre-lancamento" class="py-16 bg-cyber-card/50 border-y border-cyber-border relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <span class="text-cyber-blue font-mono uppercase tracking-wider text-sm font-bold">Cronograma Oficial</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Data do Pré-Lançamento Revelada</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+                Marque na sua agenda digital. Em <strong class="text-cyber-neon font-mono">20 de novembro de 2026</strong>, as portas da primeira edição impressa serão abertas para os auditores cívicos de todo o país.
+            </p>
+            <div class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-cyber-bg border-2 border-cyber-neon/50 text-cyber-neon font-mono text-2xl sm:text-4xl font-black tracking-wider glow-green">
+                20 / 11 / 2026
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Thesis / Concepts Section -->
+    <section id="conceitos" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+            <span class="text-cyber-neon font-mono uppercase tracking-wider text-sm font-bold">Análise Técnica</span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">O Cruzamento entre Direito e Tecnologia</h2>
+            <p class="text-slate-300 text-base sm:text-lg">
+                Como as categorias da Ciência Contábil, Banco de Dados e Sistemas Governamentais decodificam as manobras ocultas do poder institucional.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-8 hover:border-cyber-neon/50 transition duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-cyber-neon/10 border border-cyber-neon/30 flex items-center justify-center text-cyber-neon text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-bug"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Bug no Sistema</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    A exploração sistemática de falhas lógicas e omissões na Carta Magna para concentrar poder sem violar a literalidade formal do texto constitucional.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-8 hover:border-cyber-blue/50 transition duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-cyber-blue/10 border border-cyber-blue/30 flex items-center justify-center text-cyber-blue text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-code-merge"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Cheat Codes do Poder</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Atalhos institucionais e mutações casuísticas de regras aplicadas em tempo de execução para favorecer elites políticas e blindar o topo da cadeia.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-8 hover:border-amber-500/50 transition duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Falsos Patches de Segurança</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Medidas restritivas e inquéritos vendidos ao público sob o disfarce de "proteção à democracia", mas que na prática instauram censura e desativam contrapesos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="autor" class="py-20 bg-cyber-card/40 border-y border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 text-cyber-blue text-xs font-mono uppercase tracking-wider">
+                        Perfil Polímata
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Quem é o Autor?</h2>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        <strong>Thiago Monteiro Pinto</strong> une rigor analítico e visão sistêmica em uma obra original e reveladora. Com formação em <strong>Ciências Contábeis</strong> — ciência social voltada para fornecer informações essenciais para a tomada de decisão —, pós-graduação em <strong>Gestão de Bancos de Dados</strong>, <strong>Marketing Digital</strong> e <strong>Analytics</strong>, e vasta experiência na administração pública.
+                    </p>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Sua trajetória multidisciplinar desconstrói o juridiquês tradicional e cruza a teoria do Estado com a engenharia de sistemas de informação.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-cyber-bg p-4 rounded-xl border border-cyber-border">
+                            <span class="block text-2xl font-black text-cyber-neon font-mono">+10 anos</span>
+                            <span class="text-xs text-slate-400">Experiência na Administração Pública</span>
+                        </div>
+                        <div class="bg-cyber-bg p-4 rounded-xl border border-cyber-border">
+                            <span class="block text-2xl font-black text-cyber-blue font-mono">TI & Contábeis</span>
+                            <span class="text-xs text-slate-400">Cruzamento Inovador de Conceitos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-cyber-bg border border-cyber-border rounded-2xl p-8 sm:p-10 space-y-6 relative overflow-hidden">
+                        <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-cyber-neon/5 rounded-full blur-3xl pointer-events-none"></div>
+                        <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                            <i class="fa-solid fa-terminal text-cyber-neon"></i> Filosofia da Obra
+                        </h3>
+                        <blockquote class="text-slate-300 italic border-l-4 border-cyber-neon pl-4 space-y-2 text-base sm:text-lg">
+                            "A democracia não pertence a administradores de sistema que reescrevem o código-fonte por conveniência. Este livro é o protocolo antivírus definitivo para o cidadão que recusa o papel de mero espectador."
+                        </blockquote>
+                        <div class="pt-4 flex items-center justify-between text-sm font-mono text-slate-400 border-t border-cyber-border">
+                            <span>Thiago Monteiro Pinto</span>
+                            <span class="text-cyber-neon font-bold">Autor & Perito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Form & WhatsApp Integration Section -->
+    <section id="cadastro" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-cyber-card border border-cyber-border rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-cyber-neon/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="text-center space-y-4 mb-10 relative z-10">
+                <span class="text-cyber-neon font-mono uppercase tracking-wider text-xs sm:text-sm font-bold">Lista VIP de Pré-Lançamento</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Garanta Seu Exemplar Impresso</h2>
+                <p class="text-slate-300 text-sm sm:text-base max-w-lg mx-auto">
+                    Preencha seus dados abaixo para registrar seu agendamento. O sistema abrirá automaticamente o WhatsApp oficial com sua mensagem pré-formatada para o autor.
+                </p>
+            </div>
+
+            <form id="preLaunchForm" onsubmit="handleWhatsAppSubmit(event)" class="space-y-6 relative z-10 max-w-xl mx-auto">
+                <div class="space-y-2">
+                    <label for="nome" class="block text-sm font-medium text-slate-300">Seu Nome Completo</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="nome" required placeholder="Ex: Carlos Alberto" class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3.5 pl-11 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-neon transition">
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="email" class="block text-sm font-medium text-slate-300">Seu E-mail Principal</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" id="email" required placeholder="seu.email@dominio.com" class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3.5 pl-11 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-neon transition">
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="telefone" class="block text-sm font-medium text-slate-300">WhatsApp / Telefone</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500"><i class="fa-solid fa-phone"></i></span>
+                        <input type="tel" id="telefone" required placeholder="(21) 99999-9999" class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3.5 pl-11 text-white placeholder-slate-500 focus:outline-none focus:border-cyber-neon transition">
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-gradient-to-r from-cyber-neon to-emerald-500 hover:from-emerald-400 hover:to-cyber-neon text-cyber-darkgreen font-extrabold py-4 px-8 rounded-xl transition duration-300 shadow-xl shadow-cyber-neon/20 flex items-center justify-center gap-3 text-lg cursor-pointer transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar Agendamento via WhatsApp
+                    </button>
+                </div>
+
+                <p class="text-center text-xs text-slate-400 font-mono pt-2">
+                    🔒 Seus dados estão seguros. Nenhuma mensagem indesejada será enviada.
+                </p>
+            </form>
+
+            <!-- Custom Success Notification Modal (No alert()) -->
+            <div id="successModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+                <div class="bg-cyber-card border border-cyber-neon rounded-2xl p-8 max-w-md w-full text-center space-y-6 glow-green">
+                    <div class="w-16 h-16 bg-cyber-neon/20 border border-cyber-neon rounded-full flex items-center justify-center text-cyber-neon text-3xl mx-auto">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Dados Registrados com Sucesso!</h3>
+                    <p class="text-slate-300 text-sm">
+                        Redirecionando você para o WhatsApp oficial (<strong class="text-cyber-neon">5521984946997</strong>) com sua mensagem pré-preenchida...
+                    </p>
+                    <button onclick="closeModal()" class="w-full bg-cyber-neon text-cyber-darkgreen font-bold py-3 rounded-xl">
+                        Concluir e Abrir WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-card border-t border-cyber-border py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded bg-cyber-neon/10 border border-cyber-neon flex items-center justify-center text-cyber-neon font-mono font-bold text-sm">
+                    &lt;/&gt;
+                </div>
+                <span class="font-bold text-white">MANUAL DA DEMOCRACIA HACKEADO</span>
+            </div>
+            <p class="text-xs text-center md:text-left">
+                © 2026 Thiago Monteiro Pinto. Todos os direitos reservados. Pré-lançamento oficial em 20/11/2026.
+            </p>
+            <div class="flex space-x-4 text-lg">
+                <a href="https://wa.me/5521984946997" target="_blank" class="hover:text-cyber-neon transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#cadastro" class="hover:text-cyber-neon transition"><i class="fa-solid fa-book"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for WhatsApp Form Integration -->
+    <script>
+        function handleWhatsAppSubmit(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+
+            const targetPhone = '5521984946997';
+
+            const message = `Olá, Thiago! Gostaria de agendar meu exemplar no pré-lançamento do livro "Manual da Democracia Hackeado" (20/11/2026).\n\n*Meus Dados:*\n👤 Nome: ${nome}\n📧 E-mail: ${email}\n📱 Telefone: ${telefone}`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+
+            // Show custom modal instead of alert()
+            const modal = document.getElementById('successModal');
+            modal.classList.remove('hidden');
+
+            // Store URL to open after modal or directly
+            window.pendingWhatsAppUrl = whatsappUrl;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('successModal');
+            modal.classList.add('hidden');
+            if (window.pendingWhatsAppUrl) {
+                window.open(window.pendingWhatsAppUrl, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
